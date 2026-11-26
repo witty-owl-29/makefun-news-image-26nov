@@ -9,8 +9,11 @@
 A dense broadsheet front page for Thursday 26 November 2026: **50 stories**,
 every one with its own picture, all drawn in code.
 
-- **Identity:** Ink & Gold — warm ivory paper, a charcoal-black masthead band
-  with a gold title, gold rules, vermilion accents.
+- **Identity:** Forest Broadsheet — warm cream paper, a deep forest-green
+  masthead band with a cream date title, amber rules, vermilion accents.
+  Layout follows the readability principles of the reference front page
+  (big date masthead, separate stat boxes, coloured region bar, timeline
+  strip, numbered picture cards), with our own palette and composition.
 - **Leads:** US proposes tariffs on 14 nations · Houthis claim a strike on the
   Saudi Ras Tanura refinery · the Thanksgiving storm that postponed Macy's
   100th parade.
@@ -20,7 +23,11 @@ every one with its own picture, all drawn in code.
 - **Where it happened:** a world map with 8 numbered pins.
 - **Also on this day:** 35 briefs, each with a small icon and a source tag.
 - **The day in numbers:** 31 killed in Cairo · $95 Brent · 14 tariff targets ·
-  1M satellites authorised · 2,000 migrants in a day.
+  1M satellites authorised · 2,000 migrants in a day · 100th parade postponed
+  — each in its own box, number and label on separate rows.
+- **The day in regions:** a coloured region bar (Europe 10 · M. East 9 ·
+  Africa 4 · Asia 12 · Americas 13 · OCE 2) and a timeline strip of the
+  day's key events.
 - **Date check:** every story was reported on Thursday 26 November 2026;
   sources are named on the page (Reuters, KCNA, Kyiv Post, France 24,
   Times of India, Geo News, Middle East Eye, 6abc, FinScans, Moscow Times,
