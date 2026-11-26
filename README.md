@@ -9,10 +9,11 @@
 A dense broadsheet front page for Thursday 26 November 2026: **50 stories**,
 every one with its own picture, all drawn in code.
 
-- **Identity:** the Crimson Broadsheet — warm ivory paper, a crimson masthead
-  band, gold rules, ink-navy type.
-- **Leads:** US tariffs on 14 nations · Houthi strikes on the Saudi Ras Tanura
-  refinery · the Thanksgiving storm that stopped Macy's 100th parade.
+- **Identity:** Ink & Gold — warm ivory paper, a charcoal-black masthead band
+  with a gold title, gold rules, vermilion accents.
+- **Leads:** US proposes tariffs on 14 nations · Houthis claim a strike on the
+  Saudi Ras Tanura refinery · the Thanksgiving storm that postponed Macy's
+  100th parade.
 - **The day in pictures:** 12 illustrated stories (Cairo tanker fire, Kim's
   nuclear call, the Savasleyka airbase strike, the first Pakistani astronaut
   on Tiangong, SpaceX's 1M satellites, and more).
@@ -28,10 +29,11 @@ every one with its own picture, all drawn in code.
 ## How it is built
 
 `draw.mjs` draws the whole 1024×1024 image in pure Node (standard library
-only): a small RGBA canvas, a hand-drawn vector stroke font, flat-colour
-illustrations, and a hand-rolled PNG encoder. No network, no copied artwork,
-no photographs. `main.ts` copies the finished `entry.png` to the output
-directory; running it twice produces byte-identical output.
+only): a small RGBA canvas, a hand-drawn vector stroke font, shaded
+illustrations with gradients, highlights and texture, and a hand-rolled PNG
+encoder. No network, no copied artwork, no photographs. `main.ts` copies the
+finished `entry.png` to the output directory; running it twice produces
+byte-identical output.
 
 ## Run it
 
