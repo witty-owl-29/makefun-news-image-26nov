@@ -643,7 +643,7 @@ const BRIEFS = [
   ['PATCH FIXES LINUX FLAW — SL', 'bolt'],
   ['US: 15% TARIFFS ON TAIWAN GOODS — SL', 'chart'],
   ['FEDEX JET OVERRUNS MIAMI RUNWAY — GJ', 'plane'],
-  ['BGP HIJACK DIVERTS BITCOIN POWER — FSC', 'bolt'],
+  ['BGP HIJACK DIVERTS BITCOIN — FSC', 'bolt'],
   ['UK PLANS DEFI RULES AFTER HACK — FSC', 'doc'],
   ['GOLD NEAR 15-MONTH LOW — FSC', 'bars'],
   ['RAYTHEON WINS NAVY MISSILE DEAL — SL', 'jet'],
@@ -657,7 +657,7 @@ const BRIEFS = [
   ['MECCA PACT TESTED BY CLASHES — SL', 'globe'],
   ['US RAPS S. KOREA ON COUPANG — SL', 'chart'],
   ['FORT HOOD GUNMAN SEEKS STAY — RTRS', 'gavel'],
-  ['ARMY BLOWS UP EXPLOSIVE STORES — RTRS', 'flame'],
+  ['ARMY BLOWS UP AMMO STORES — RTRS', 'flame'],
   ["RADAR OUTAGE DELAYS O'HARE — RTRS", 'plane'],
   ['THOMAS MARKLE CHARGED IN US — RTRS', 'doc'],
   ['PHILLY PARADE AXED BY STORM — 6ABC', 'flame'],
@@ -783,13 +783,14 @@ drawMap(M, 776, W - 2 * M, 56, PINS);
 line(M, 776, W - M, 776, 1, C.amber);
 line(M, 832, W - M, 832, 1, C.amber);
 
-// ---- briefs: 3 columns x 12 rows
+// ---- briefs: 4 columns x 9 rows (v4 fix: rowH was 9.5px < ~10px glyph ink,
+// so adjacent rows fused into black mush; 4 cols x 13.5px step = clear gaps)
 drawText('ALSO ON THURSDAY 26 NOVEMBER — 35 MORE STORIES', M, 838, 11, C.forest, 'left', 1);
 line(M + textWidth('ALSO ON THURSDAY 26 NOVEMBER — 35 MORE STORIES', 11) + 10, 844, W - M, 844, 2, C.amber);
 {
-  const colW = (W - 2 * M - 2 * 10) / 3, rowH = 9.5, gy = 854;
+  const colW = (W - 2 * M - 3 * 10) / 4, rowH = 13.5, gy = 854;
   BRIEFS.forEach((b, i) => {
-    const col = Math.floor(i / 12), row = i % 12;
+    const col = Math.floor(i / 9), row = i % 9;
     const x = M + col * (colW + 10), y = gy + row * rowH;
     ICONS[b[1]](x, y - 1, 8, C.forest);
     drawText(fitText(b[0], 8.5, colW - 16), x + 13, y, 8.5, C.ink);
