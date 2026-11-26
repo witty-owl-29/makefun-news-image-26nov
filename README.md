@@ -35,12 +35,12 @@ every one with its own picture, all drawn in code.
 
 ## How it is built
 
-`draw.mjs` draws the whole 1024×1024 image in pure Node (standard library
-only): a small RGBA canvas, a hand-drawn vector stroke font, shaded
-illustrations with gradients, highlights and texture, and a hand-rolled PNG
-encoder. No network, no copied artwork, no photographs. `main.ts` copies the
-finished `entry.png` to the output directory; running it twice produces
-byte-identical output.
+`draw.py` renders the whole 1024×1024 image with PIL and real fonts
+(DejaVu Serif for headlines, DejaVu Sans for labels): true font metrics, so
+nothing overlaps, and every line is legible. The illustrations are shaded
+drawings with gradients, highlights and texture. No network, no copied
+artwork, no photographs. `main.ts` copies the finished `entry.png` to the
+output directory; running it twice produces byte-identical output.
 
 ## Run it
 
